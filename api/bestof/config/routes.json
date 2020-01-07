@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/bestofs",
+      "handler": "Bestof.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/bestofs/count",
+      "handler": "Bestof.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/bestofs/:id",
+      "handler": "Bestof.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/bestofs",
+      "handler": "Bestof.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/bestofs/:id",
+      "handler": "Bestof.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/bestofs/:id",
+      "handler": "Bestof.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

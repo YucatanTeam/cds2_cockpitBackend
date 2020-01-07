@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/candocertificates",
+      "handler": "Candocertificate.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/candocertificates/count",
+      "handler": "Candocertificate.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/candocertificates/:id",
+      "handler": "Candocertificate.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/candocertificates",
+      "handler": "Candocertificate.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/candocertificates/:id",
+      "handler": "Candocertificate.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/candocertificates/:id",
+      "handler": "Candocertificate.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

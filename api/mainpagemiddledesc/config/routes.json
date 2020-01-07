@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/mainpagemiddledescs",
+      "handler": "Mainpagemiddledesc.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mainpagemiddledescs/count",
+      "handler": "Mainpagemiddledesc.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mainpagemiddledescs/:id",
+      "handler": "Mainpagemiddledesc.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/mainpagemiddledescs",
+      "handler": "Mainpagemiddledesc.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/mainpagemiddledescs/:id",
+      "handler": "Mainpagemiddledesc.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/mainpagemiddledescs/:id",
+      "handler": "Mainpagemiddledesc.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

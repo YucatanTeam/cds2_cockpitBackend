@@ -1,0 +1,58 @@
+{
+  "connection": "default",
+  "collectionName": "services",
+  "info": {
+    "name": "candoservices",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "body_text": {
+      "type": "richtext",
+      "required": true
+    },
+    "btn_text": {
+      "type": "string",
+      "required": true
+    },
+    "left_text_title": {
+      "type": "string",
+      "required": true
+    },
+    "background_img_1": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "background_img_2": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "en_title": {
+      "type": "string",
+      "required": true
+    },
+    "body_en_text": {
+      "type": "richtext",
+      "required": true
+    },
+    "btn_en_text": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

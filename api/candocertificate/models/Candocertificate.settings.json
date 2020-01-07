@@ -1,0 +1,22 @@
+{
+  "connection": "default",
+  "collectionName": "candocertificates",
+  "info": {
+    "name": "candocertificate",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "content": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/yellowheaders",
+      "handler": "Yellowheaders.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/yellowheaders/count",
+      "handler": "Yellowheaders.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/yellowheaders/:id",
+      "handler": "Yellowheaders.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/yellowheaders",
+      "handler": "Yellowheaders.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/yellowheaders/:id",
+      "handler": "Yellowheaders.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/yellowheaders/:id",
+      "handler": "Yellowheaders.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

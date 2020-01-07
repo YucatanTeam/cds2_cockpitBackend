@@ -1,0 +1,18 @@
+{
+  "connection": "default",
+  "collectionName": "contactuses",
+  "info": {
+    "name": "contactus",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "content": {
+      "type": "richtext"
+    }
+  }
+}

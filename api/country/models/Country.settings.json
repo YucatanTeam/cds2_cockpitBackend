@@ -1,0 +1,66 @@
+{
+  "connection": "default",
+  "collectionName": "counntries",
+  "info": {
+    "name": "country",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "en_name": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "main": {
+      "type": "boolean"
+    },
+    "slug": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "en_slug": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "header_background_img": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "first_card_other_country": {
+      "type": "boolean"
+    },
+    "second_card_other_country": {
+      "type": "boolean"
+    },
+    "third_card_other_country": {
+      "type": "boolean"
+    },
+    "posts": {
+      "collection": "post",
+      "via": "counntry"
+    }
+  }
+}

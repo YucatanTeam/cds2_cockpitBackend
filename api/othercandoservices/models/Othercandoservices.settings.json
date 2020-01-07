@@ -1,0 +1,21 @@
+{
+  "connection": "default",
+  "collectionName": "othercandoservices",
+  "info": {
+    "name": "othercandoservices",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    }
+  }
+}

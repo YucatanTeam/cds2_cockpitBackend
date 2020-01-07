@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/tabs",
+      "handler": "Tabs.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tabs/count",
+      "handler": "Tabs.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tabs/:id",
+      "handler": "Tabs.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tabs",
+      "handler": "Tabs.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/tabs/:id",
+      "handler": "Tabs.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/tabs/:id",
+      "handler": "Tabs.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

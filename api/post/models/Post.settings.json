@@ -1,0 +1,61 @@
+{
+  "connection": "default",
+  "collectionName": "posts",
+  "info": {
+    "name": "post",
+    "description": "blog post"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "title": {
+      "required": true,
+      "type": "string",
+      "unique": true
+    },
+    "en_title": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "en_content": {
+      "type": "richtext"
+    },
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "newsletter": {
+      "type": "boolean"
+    },
+    "counntry": {
+      "model": "country",
+      "via": "posts"
+    },
+    "slug": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "en_slug": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "languagecourse": {
+      "model": "languagecourses",
+      "via": "posts"
+    }
+  }
+}

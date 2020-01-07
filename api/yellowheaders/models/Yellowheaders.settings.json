@@ -1,0 +1,34 @@
+{
+  "connection": "default",
+  "collectionName": "yellowheaders",
+  "info": {
+    "name": "yellowheaders",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "en_name": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "background_img": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "connection": "default",
+  "collectionName": "sitedescs",
+  "info": {
+    "name": "mainpagemiddledesc",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "mainDescription": {
+      "type": "richtext",
+      "required": true
+    },
+    "rightDescription": {
+      "type": "richtext",
+      "required": true
+    },
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "background_img": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "mainDescription_en": {
+      "type": "richtext",
+      "required": true
+    },
+    "rightDescription_en": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}
