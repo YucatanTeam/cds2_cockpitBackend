@@ -22,7 +22,6 @@ package-lock.json
 /config/*
 /tests/*
 /node_modules
-addons/
 !.gitignore
 !.gitkeep
 !/storage/*/index.html
